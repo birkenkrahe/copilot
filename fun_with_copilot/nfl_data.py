@@ -8,6 +8,7 @@ with open('fun_with_copilot/nfl_offensive_stats.csv','r',encoding="utf-8") as f:
     nfl_data = list(nfl_reader)
     print(nfl_data[0])
 
+
 """
 In the data we just read in, the fourth column is the player's name.
 and the 8th column is the number of passing yards for that player.
