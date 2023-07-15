@@ -1,5 +1,6 @@
 '''
-Open the csv file called nfl_offensive_stats.csv, then read in the csv data from the file
+Open the csv file called nfl_offensive_stats.csv, 
+then read in the csv data from the file
 '''
 import csv
 with open('fun_with_copilot/nfl_offensive_stats.csv','r',encoding="utf-8") as f:
@@ -13,7 +14,6 @@ and the 8th column is the number of passing yards for that player.
 Get the sum of yards from column 8 where the 4th column value is 
 "Aaron Rodgers".
 '''
-# Aaron Rodgers
 total_passing_yards = 0
 for row in nfl_data:
     if row[3] == "Aaron Rodgers":
