@@ -1,16 +1,8 @@
 '''
-open the csv file called nfl_offensive_stats.csv 
-and read in the csv data from the file
+open the csv file called nfl_offensive_stats.csv, then read in the csv data from the file
 '''
-import csv  # import the csv module to read in the csv file 
-
-# open the csv file called nfl_offensive_stats.csv
-with open('nfl_offensive_stats.csv') as csv_file:
-    # read in the csv data from the file
-    csv_reader = csv.reader(csv_file, delimiter=',')
-    # skip the header row
-    next(csv_reader)
-    # loop through each row in the csv file
-    for row in csv_reader:
-        # print out the row
-        print(row)
+import csv
+with open('fun_with_copilot/nfl_offensive_stats.csv','r',encoding="utf-8") as f:
+    nfl_reader = csv.reader(f)
+    nfl_data = list(nfl_reader)
+    print(nfl_data[0])
