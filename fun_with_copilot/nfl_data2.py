@@ -66,5 +66,5 @@ df = pd.DataFrame.from_dict(qb_passing_yards, orient='index', columns=['pass_yds
 # Sort the DataFrame by passing yards in descending order
 df = df.sort_values(by='pass_yds', ascending=False)
 
-# Print the top 5 (without Tom Brady) in a table
+# Print the top 5 in a table - exclude Tom Brady
 df[df.index != 'Tom Brady'].head()
