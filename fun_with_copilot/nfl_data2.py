@@ -28,7 +28,7 @@ for row in data:
         # If they are already in the dictionary, add their passing yards to their current total
         qb_passing_yards[row['player']] = qb_passing_yards.get(row['player'], 0) + row['pass_yds']
 
-print(qb_passing_yards)
+#print(qb_passing_yards)
 
 '''
 This addition by Copilot:
