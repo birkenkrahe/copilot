@@ -35,4 +35,8 @@ This addition by Copilot:
 sort the qb_passing_yards dictionary by the values (passing yards) in descending order
 '''
 sorted_qb_passing_yards = sorted(qb_passing_yards.items(), key=lambda x: x[1], reverse=True)
-print(sorted_qb_passing_yards)
+'''
+print the top 10 quarterbacks by passing yards one per line and their passing yards
+'''
+for i in range(10):\
+    print(sorted_qb_passing_yards[i][0], sorted_qb_passing_yards[i][1])
