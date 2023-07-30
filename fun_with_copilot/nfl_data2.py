@@ -6,7 +6,7 @@ https://shareg.pt/h1hmCjr
 import pandas as pd
 
 # Read the CSV file
-nfl_data = pd.read_csv('fun_with_copilot/data/nfl_offensive_stats.csv')
+nfl_data = pd.read_csv('nfl_offensive_stats.csv')
 nfl_data.head()
 
 # Convert the DataFrame to a list of dictionaries, each representing a row
