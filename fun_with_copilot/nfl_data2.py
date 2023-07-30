@@ -29,3 +29,10 @@ for row in data:
         qb_passing_yards[row['player']] = qb_passing_yards.get(row['player'], 0) + row['pass_yds']
 
 print(qb_passing_yards)
+
+'''
+This addition by Copilot:
+sort the qb_passing_yards dictionary by the values (passing yards) in descending order
+'''
+sorted_qb_passing_yards = sorted(qb_passing_yards.items(), key=lambda x: x[1], reverse=True)
+print(sorted_qb_passing_yards)
